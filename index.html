@@ -22,7 +22,8 @@
               </p>
               
 
-                I am a first year PhD student at the <a href="https://sites.usc.edu/quann/">Dynamic Robotics and Control Laboratory</a> at the 
+                I am a PhD student at the <a href="https://sites.usc.edu/quann/">Dynamic Robotics and Control Laboratory</a> advised by 
+                <a href="https://viterbi.usc.edu/directory/faculty/Nguyen/Quan">Quan Nguyen</a> at the 
                 <a href="https://viterbischool.usc.edu/">University of Southern California, Viterbi School of Engineering</a>.
 
                 I received my Bachelor's in Electronics Engineering from the 
@@ -31,9 +32,9 @@
                 
               <p>
                 In my past life, I was a student collaborator working with 
-                <a href="https://www.seethapathilab.org/openings">Dr. Nidhi Seethapathi</a> at the 
+                <a href="https://www.seethapathilab.org/openings">Nidhi Seethapathi</a> at the 
                 <a href="https://www.seethapathilab.org/">Seethapathi Motor Control Lab</a>, MIT on the development of a 
-                framework to study human locomotor adaptation.Prior to that, I was a guest researcher at the <a href="https://mg.is.tuebingen.mpg.de/people">Movement Generation and Control Group</a>, Max Planck Institute 
+                framework to study human locomotor adaptation. Prior to that, I was a guest researcher at the <a href="https://mg.is.tuebingen.mpg.de/people">Movement Generation and Control Group</a>, Max Planck Institute 
                 for Intelligent Systems, working on control strategies for agile and dynamic bipedal locomotion 
                 under the supervision of  <a href="https://www.is.mpg.de/~mkhadiv">Majid Khadiv</a>. I was also a 
                 student researcher at the <a href="https://stochlab.github.io/">Stochastic Robotics Lab</a>, 
@@ -44,18 +45,17 @@
                 frameworks for robust proprioceptive bipedal walking. 
                     
               </p>
-              Apart from my research activities, I also co-found and lead the student research group, 
-              <a href="https://robotics-club-iit-bhu.github.io/RoboReG/people.html">RoboReG</a> at my IIT BHU. 
+              Apart from my research activities, I also co-founded and led the student research group, 
+              <a href="https://robotics-club-iit-bhu.github.io/RoboReG/people.html">RoboReG</a> at IIT BHU. 
               As the technical lead of this group, I have successfully mentored several student-driven 
               <a href="https://robotics-club-iit-bhu.github.io/RoboReG/research.html">research projects</a></a> 
-              and led student teams in events/competitions of national significance.I am always happy to learn and open 
-              to network.
+              and teams in events/competitions of national significance. 
               <p>
 
 
               </p>
               <p style="text-align:center">
-                <a href="mailto:lokesha1b2c3@gmail.com">Email</a> &nbsp/&nbsp
+                <a href="mailto:lkrajan@usc.edu">Email</a> &nbsp/&nbsp
                 <a href="data/CV.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/lokeshkrishna">LinkedIn</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?hl=en&user=7J2ZKBcAAAAJ">Google Scholar</a> &nbsp/&nbsp
@@ -74,11 +74,19 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My research interest lies in extending the athletic intelligence in robots and 
-                thereby leveraging their motor skills. I am interested in adopting formal methods from optimization,
-                reinforcement learning to control hybrid and underactuated robotic systems. In future, 
-                I look forward to working towards the development of algorithms with the optimal balance of 
-                performance, reliability and guarantees that are key to real-world robotic applications.
+                My research interest focuses on extending the athletic intelligence in robots, thereby leveraging their motor skills to be on par with the 
+                superior locomotion skills found in the animal kingdom: the result of centuries of evolution. Though nature stands as an unparalleled motivation 
+                for us to mimic through machines, I realize its cruel mockery and envy its athletic supremacy every time I see the energy-exploding gallop of a 
+                cheetah or the agile flight maneuver of a soaring eagle or the sudden sprint by a raging ostrich. Decades of development in robot actuation, sensing, 
+                and computation have finally paved the way for such machines to be a reality. 
+
+
+                However, the algorithmic principles to attain such extreme performance in robots while solving diverse tasks continues to be the final piece of the 
+                puzzle, calling to develop techniques that show strong empirical results backed by unassailable mathematical proofs and an understanding through 
+                first principles. To this end, I am interested in adopting formal methods from reinforcement learning and optimization to realize extreme performance 
+                in hybrid underactuated robotic systems with an optimal balance of performance, reliability, and guarantees that are key to real-world robotic 
+                applications.
+
                 Representative works are <span class="highlight">highlighted</span>.
               </p>
             </td>
@@ -95,11 +103,51 @@
   
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+
+      <tr onmouseout="mmode_stop()" onmouseover="mmode_start()"  bgcolor="#ffffd0">
+        <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='mmode'><img src="media/mmode/v3_crop_spd.gif" width="200" height="140"></div>
+          <img src="media/mmode/gap_block.png" width="200" height="140">
+        </div>
+        <script type="text/javascript">
+          function mmode_start() {
+            document.getElementById('mmode').style.opacity = "1";
+          }
+    
+          function mmode_stop() {
+            document.getElementById('mmode').style.opacity = "0";
+          }
+          mmode_stop()
+        </script>
+       </td>
+        <td style="padding:20px;width:65%;vertical-align:middle">
+        <papertitle>Learning Multimodal Bipedal Locomotion and Implicit Transitions: A Versatile Policy Approach</papertitle>
+        <br>
+        <strong>Lokesh Krishna</strong>,
+        <a href="https://viterbi.usc.edu/directory/faculty/Nguyen/Quan">Quan Nguyen</a>
+        <br>
+        <em>Accepted at <a href=https://ieee-iros.org> IROS 2023</a></em>
+        <br>
+        <!-- <a href="https://ieeexplore.ieee.org/document/9682564">IEEE Xplore</a> / -->
+        <a href="https://arxiv.org/abs/2303.05711">arXiv</a> /
+        <a href="https://youtu.be/-E5EBf8695A">video</a> 
+        <!-- <a href="https://stochlab.github.io/projects/LinearPolicyBiped.html">project page</a> / -->
+        <!-- <a href="https://github.com/StochLab/SlopedTerrainLinearPolicy">GitHub</a> / -->
+        <!-- <a href="https://docs.google.com/presentation/d/1WL9k3iihEbqO-NVvhCFthU9dEXLZwccxe9vDN4gUeUs/edit?usp=sharing">slides</a> -->
+        <!-- <p>To make bipeds walk blindly on arbitary slopes, outdoors and stairs aswell as have a direct sim-to-real transfer, we find linear policies to be sufficient. </p> -->
+        </td>
+      </tr> 
+
+
+
+
       <tr onmouseout="lpbipedsuf_stop()" onmouseover="lpbipedsuf_start()"  bgcolor="#ffffd0">
         <td style="padding:20px;width:30%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='lpbipedsuf'><img src="media/lpbipedsuf/all_combined.gif" width="200" height="170"></div>
-          <img src="media/lpbipedsuf/stair_static.gif" width="200" height="170">
+          <div class="two" id='lpbipedsuf'><img src="media/lpbipedsuf/all_combined.gif" width="200" height="150"></div>
+          <img src="media/lpbipedsuf/stair_static.gif" width="200" height="150">
         </div>
         <script type="text/javascript">
           function lpbipedsuf_start() {
@@ -121,7 +169,7 @@
         <a href="https://mae.osu.edu/people/hereid.1">Ayonga Hereid</a>,
         <a href="https://shishirny.github.io/">Shishir Kolathaya</a>
         <br>
-        <em>Accepted at IEEE RA-L (journal), submitted to <a href=https://www.icra2022.org> ICRA 2022</a></em>
+        <em>Accepted at IEEE RA-L (journal) and <a href=https://www.icra2022.org> ICRA 2022</a></em>
         <br>
         <a href="https://ieeexplore.ieee.org/document/9682564">IEEE Xplore</a> /
         <a href="https://arxiv.org/abs/2109.12665">arXiv</a> /
@@ -129,15 +177,15 @@
         <!-- <a href="https://stochlab.github.io/projects/LinearPolicyBiped.html">project page</a> / -->
         <!-- <a href="https://github.com/StochLab/SlopedTerrainLinearPolicy">GitHub</a> / -->
         <!-- <a href="https://docs.google.com/presentation/d/1WL9k3iihEbqO-NVvhCFthU9dEXLZwccxe9vDN4gUeUs/edit?usp=sharing">slides</a> -->
-        <p>To make bipeds walk blindly on arbitary slopes, outdoors and stairs aswell as have a direct sim-to-real transfer, we find linear policies to be sufficient. </p>
+        <!-- <p>To make bipeds walk blindly on arbitary slopes, outdoors and stairs aswell as have a direct sim-to-real transfer, we find linear policies to be sufficient. </p> -->
         </td>
       </tr> 
           
       <tr onmouseout="lpbiped_stop()" onmouseover="lpbiped_start()"  bgcolor="#ffffd0">
           <td style="padding:20px;width:30%;vertical-align:middle">
           <div class="one">
-            <div class="two" id='lpbiped'><img src="media/lpbiped/lpb_final.gif" width="200" height="170"></div>
-            <img src="media/lpbiped/lpb_final_pic.gif" width="200" height="170">
+            <div class="two" id='lpbiped'><img src="media/lpbiped/lpb_final.gif" width="200" height="150"></div>
+            <img src="media/lpbiped/lpb_final_pic.gif" width="200" height="150">
           </div>
           <script type="text/javascript">
             function lpbiped_start() {
@@ -159,7 +207,7 @@
           <a href="https://mae.osu.edu/people/hereid.1">Ayonga Hereid</a>,
           <a href="https://shishirny.github.io/">Shishir Kolathaya</a>
           <br>
-          <em>Accepted at  IEEE/RSJ International Conference on Intelligent Robots and Systems <a href="https://www.iros2021.org/"> (IROS 2021)</a></em>
+          <em>Accepted at <a href="https://www.iros2021.org/"> IROS 2021</a></em>
           <br>
           <a href="https://ieeexplore.ieee.org/document/9636070">IEEE Xplore</a> /
           <a href="https://arxiv.org/abs/2104.01662">arXiv</a> /
@@ -167,15 +215,15 @@
           <!-- <a href="https://github.com/StochLab/SlopedTerrainLinearPolicy">GitHub</a> / -->
           <!-- <a href="https://docs.google.com/presentation/d/1WL9k3iihEbqO-NVvhCFthU9dEXLZwccxe9vDN4gUeUs/edit?usp=sharing">slides</a> -->
           <a href="https://youtu.be/4WhgD8u74OY">video</a> 
-          <p>In this paper, we view toward deployment of robust and light-weight control frameworks for bipedal walking robots.</p>
+          <!-- <p>In this paper, we view toward deployment of robust and light-weight control frameworks for bipedal walking robots.</p> -->
           </td>
       </tr> 
 
       <tr onmouseout="lpquad_stop()" onmouseover="lpquad_start()"  bgcolor="#ffffd0">
         <td style="padding:20px;width:30%;vertical-align:middle">
           <div class="one">
-            <div class="two" id='corl'><img src="media/lpquad/lpquad.gif" width="200" height="170"></div>
-            <img src="media/lpquad/lpquadpic.gif" width="200" height="170">
+            <div class="two" id='corl'><img src="media/lpquad/lpquad.gif" width="200" height="150"></div>
+            <img src="media/lpquad/lpquadpic.gif" width="200" height="150">
           </div>
           <script type="text/javascript">
             function lpquad_start() {
@@ -202,7 +250,7 @@
           <a href="">Bharadwaj Amrutur</a>,
           <a href="https://shishirny.github.io/">Shishir Kolathaya</a>
           <br>
-          <em>Accepted at the 4th Conference on Robot Learning <a href="https://www.robot-learning.org/"> (CoRL 2020)</a>, MIT, USA </em>
+          <em>Accepted at <a href="https://www.robot-learning.org/"> CoRL 2020</a> </em>
           <br>
           <a href="https://proceedings.mlr.press/v155/paigwar21a.html">PMLR</a> /
           <a href="https://arxiv.org/abs/2010.16342">arXiv</a> /
@@ -210,8 +258,8 @@
           <a href="https://github.com/StochLab/SlopedTerrainLinearPolicy">GitHub</a> /
           <a href="https://youtu.be/KdQn1e3rI7o">video</a> /
           <a href="https://docs.google.com/presentation/d/1WL9k3iihEbqO-NVvhCFthU9dEXLZwccxe9vDN4gUeUs/edit?usp=sharing">slides</a>
-          <p> What is the minimum possible control framework that can be deployed to realize stable locomotion behaviors 
-              on slopped terrains in medium-size low-cost quadruped robots?</p>
+          <!-- <p> What is the minimum possible control framework that can be deployed to realize stable locomotion behaviors 
+              on slopped terrains in medium-size low-cost quadruped robots?</p> -->
         </td>
       </tr> 
   
@@ -228,18 +276,21 @@
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       
-      <tr>
+      <!-- <tr>
         <th colspan="2">Ongoing Work(s)</th> 
-      </tr>
-
+      </tr> -->
+<!-- 
+      <tr>
+        <th colspan="2">Past Work(s</th> 
+      </tr> -->
 
 
       <tr onmouseout="hmmec_stop()" onmouseover="hmmec_start()" bgcolor="#ffffd0">
         <td style="padding:20px;width:30%;vertical-align:middle">
           <div class="one">
             <div class="two" id='hmmec_image'>
-              <img src='media/hmmec/hmmec.gif' width="200" height="170" ></div>
-            <img src='media/hmmec/hmmec_pic.gif' width="200" height="170">
+              <img src='media/hmmec/hmmec.gif' width="200" height="150" ></div>
+            <img src='media/hmmec/hmmec_pic.gif' width="200" height="150">
           </div>
           <script type="text/javascript">
             function hmmec_start() {
@@ -265,24 +316,21 @@
 
           <br>
           <br>
-          <a href="">GitHub</a>
-          /
-          <a href="">video (coming soon)</a>
+          <a href=""></a>
+          <!-- / -->
+          <a href=""></a>
     
       </td>
 
 
-      <tr>
-        <th colspan="2">Completed Work(s)</th> 
-      </tr>
 
 
       <tr onmouseout="tdmsl_stop()" onmouseover="tdmsl_start()"   bgcolor="#ffffd0">
         <td style="padding:20px;width:30%;vertical-align:middle">
           <div class="one">
             <div class="two" id='tdmsl_image'>
-              <img src='media/tdmsl/hills.gif' width="200" height="170"></div>
-            <img src='media/tdmsl/hills_static.gif' width="200" height="170">
+              <img src='media/tdmsl/hills.gif' width="200" height="150"></div>
+            <img src='media/tdmsl/hills_static.gif' width="200" height="150">
           </div>
           <script type="text/javascript">
             function tdmsl_start() {
@@ -321,8 +369,8 @@
         <td style="padding:20px;width:30%;vertical-align:middle">
           <div class="one">
             <div class="two" id='aadopt_image'>
-              <img src='media/aadopt/aadopt.gif' width="200" height="170" ></div>
-            <img src='media/aadopt/aadopt.png' width="200" height="170">
+              <img src='media/aadopt/aadopt.gif' width="200" height="150" ></div>
+            <img src='media/aadopt/aadopt.png' width="200" height="150">
           </div>
           <script type="text/javascript">
             function aadopt_start() {
@@ -355,8 +403,8 @@
       <tr onmouseout="ip_flip_stop()" onmouseover="ip_flip_start()"  >
         <td style="padding:20px;width:30%;vertical-align:middle">
           <div class="one">
-            <div class="two" id='grid'><img src="media/ip_grid/ip.gif" width="200" height="170"></div>
-            <img src="media/ip_grid/ip_pic.gif" width="200" height="170">
+            <div class="two" id='grid'><img src="media/ip_grid/ip.gif" width="200" height="150"></div>
+            <img src="media/ip_grid/ip_pic.gif" width="200" height="150">
           </div>
           <script type="text/javascript">
             function ip_flip_start() {
@@ -392,8 +440,8 @@
           <td style="padding:20px;width:30%;vertical-align:middle">
             <div class="one">
               <div class="two" id='jerbot_image'>
-                <img src='media/jerbot/Jerbotall3.gif' width="200" height="170"></div>
-              <img src='media/jerbot/jerbot.gif' width="200" height="170">
+                <img src='media/jerbot/Jerbotall3.gif' width="200" height="150"></div>
+              <img src='media/jerbot/jerbot.gif' width="200" height="150">
             </div>
             <script type="text/javascript">
               function jerbot_start() {
@@ -431,8 +479,8 @@
             <td style="padding:20px;width:30%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='towrpy_image'>
-                  <img src='media/towrpy/towrpy.gif' width="200" height="170" ></div>
-                <img src='media/towrpy/towrpy_pic.gif' width="200" height="170">
+                  <img src='media/towrpy/towrpy.gif' width="200" height="150" ></div>
+                <img src='media/towrpy/towrpy_pic.gif' width="200" height="150">
               </div>
               <script type="text/javascript">
                 function towrpy_start() {
@@ -475,15 +523,15 @@
       <td style="padding:20px;width:33%;vertical-align:middle" bgcolor="#ffffd0">
 
         <div class="one">
-          <img src="media/miniprojects/minicheetahgym.gif" width="200" height="170">        
+          <img src="media/miniprojects/minicheetahgym.gif" width="200" height="150">        
         </div>
 
       </td>
       <td style="padding:20px;width:33%;vertical-align:middle" >
           <div class="one">
               <div class="two" id='arduinomlp_image'>
-                <img src='media/miniprojects/arduinomlp.gif' width="200" height="170" ></div>
-              <img src='media/miniprojects/arduinomlp_pic.gif' width="200" height="170">
+                <img src='media/miniprojects/arduinomlp.gif' width="200" height="150" ></div>
+              <img src='media/miniprojects/arduinomlp_pic.gif' width="200" height="150">
             </div>
           
           </div>
@@ -502,7 +550,7 @@
       <td style="padding:20px;width:33%;vertical-align:middle" bgcolor="#ffffd0">
 
         <div class="one">
-          <img src="media/miniprojects/raisimstoch2.gif" width="200" height="170">
+          <img src="media/miniprojects/raisimstoch2.gif" width="200" height="150">
           <!-- <p style="text-align:center">
             <strong>RaisimStoch2</strong>
             <br> 
@@ -547,17 +595,17 @@
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>    
       <td style="padding:20px;width:33%;vertical-align:middle" >
         <div class="one">
-              <img src='media/miniprojects/ludobot.gif' width="200" height="170" >
+              <img src='media/miniprojects/ludobot.gif' width="200" height="150" >
           </div>
       </td>
       <td style="padding:20px;width:33%;vertical-align:middle" >
         <div class="one">
-          <img src='media/miniprojects/gesturebot.gif' width="200" height="170" >
+          <img src='media/miniprojects/gesturebot.gif' width="200" height="150" >
         </div>    
       </td>
       <td style="padding:20px;width:33%;vertical-align:middle" >
         <div class="one">
-          <img src='media/miniprojects/evalstrat4.gif' width="200" height="170" >
+          <img src='media/miniprojects/evalstrat4.gif' width="200" height="150" >
         </div>    
       </td>
 
@@ -585,7 +633,7 @@
           <p style="text-align:center" >
             <strong>GAMCA: Genetic Algorithm to solve Maze like Cellular Automata</strong>
             <br>
-            <a href="https://github.com/lok-i/MazeSolver_with_EvolutionaryStrategies">GitHub</a> /
+            <a href="https://github.com/lok-i/MazeSolver_with_EvolutionaryStrategies">GitHub</a>
           </p>
         </td>
 
