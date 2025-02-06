@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <title>Lokesh Krishna</title>
   
@@ -8,6 +9,37 @@
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="media/usc_seal2.png">
+  <style>
+    /* Create a grid with 2 rows and 3 columns, where the first two columns take more space */
+    .image-layout {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1.4fr; /* First two columns take 2 parts each, third column takes 1 part */
+        grid-template-rows: 1fr 1fr; /* 2 equal rows */
+        gap: 5px; /* Space between images */
+
+    }
+
+    /* Style for individual images */
+    .image-layout img {
+        width: 100%; /* Ensure images fill their grid cells */
+        height: 100%; /* Maintain aspect ratio */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove any default padding */
+        object-fit: cover; /* Fill the container, cropping as needed */
+        display: block; /* Remove any default inline styles */
+    }
+
+    /* Ensure the last column (both rows) has the same image */
+    .image-layout .span-rows {
+        grid-column: 2; /* Position in the last column */
+        grid-row: span 2; /* Span both rows in the last column */
+    }
+
+    /* Make the first two columns in the second row span across both columns */
+    .image-layout .span-cols {
+        grid-column: span 2; /* Span across the first two columns */
+    }
+</style>
 </head>
 
 <body>
@@ -28,9 +60,9 @@
 
                 I received my Bachelor's in Electronics Engineering from the 
                 <a href="https://www.iitbhu.ac.in/">Indian Institute of Technology (BHU) Varanasi</a>.
-                
+
                 My research focuses on control synthesis for agile, multi-mode robot control to achieve extreme performance, 
-                leveraging reinforcement learning and optimal control—guided by principles of control theory.
+                leveraging reinforcement learning and optimal control—guided by the principles of control theory.
 
               <p>
                 <!-- In my past life, I was a student collaborator working with 
@@ -110,11 +142,25 @@
           </tbody></table>
 
     
-    <img width="180" height="130" src="media/mmode/v3_crop_spd.gif" alt="GIF" style="border-radius: 15px;">
-    <img width="180" height="130" src="media/mmode/v3_crop_spd.gif" alt="GIF" style="border-radius: 15px;">
-    <img width="180" height="130" src="media/mmode/v3_crop_spd.gif" alt="GIF" style="border-radius: 15px;">
-    <img width="180" height="130" src="media/mmode/v3_crop_spd.gif" alt="GIF" style="border-radius: 15px;">
-          
+    <!-- <img width="400"  src="media/overview/parkour.gif" alt="GIF" style="border-radius: 15px;"> -->
+    <!-- <img width="275" src="media/overview/run.gif" alt="GIF" style="border-radius: 15px;"> -->
+    <!-- <img width="190" src="media/overview/dive_crop.gif" alt="GIF" style="border-radius: 15px;"> -->
+    
+    <!-- <img width="300" height="130" src="media/overview/locomanip.gif" alt="GIF" style="border-radius: 15px;"> -->
+    <!-- <img width="300" src="media/overview/digit_terrace_hw_full.gif" alt="GIF" style="border-radius: 15px;"> -->
+
+    <div class="image-layout">
+
+      <img src="media/overview/parkour_crop.gif" alt="Image 1" style="border-radius: 15px;">
+      <img class="span-rows" src="media/overview/dive_convert_crop.gif" alt="Same Image" style="border-radius: 15px;">
+      <img src="media/overview/soccer_all_crop.gif" alt="Image 2" style="border-radius: 15px;">
+      <img src="media/overview/bh_box_crop.gif" alt="Image 1" style="border-radius: 15px;">
+      <img src="media/overview/digit_terrace_hw_full.gif" alt="Image 2" style="border-radius: 15px;">
+
+      
+      <!-- Same image in the last column (spanning both rows) -->
+  </div>
+
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr>
         <td style="padding:20px;width:100%;vertical-align:middle">
