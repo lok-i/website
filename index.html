@@ -13,9 +13,10 @@
     /* Create a grid with 2 rows and 3 columns, where the first two columns take more space */
     .image-layout {
         display: grid;
-        grid-template-columns: 1.4fr 1fr 1.4fr; /* First two columns take 2 parts each, third column takes 1 part */
+        grid-template-columns: 1.3fr 1fr 1.3fr; /* First two columns take 2 parts each, third column takes 1 part */
         grid-template-rows: 1fr 1fr; /* 2 equal rows */
         gap: 5px; /* Space between images */
+        height: 300px;
 
     }
 
@@ -25,8 +26,7 @@
         height: 100%; /* Maintain aspect ratio */
         margin: 0; /* Remove default margin */
         padding: 0; /* Remove any default padding */
-        object-fit: cover; /* Fill the container, cropping as needed */
-        display: block; /* Remove any default inline styles */
+        /*object-fit: cover;  Fill the container, cropping as needed */
     }
 
     /* Ensure the last column (both rows) has the same image */
@@ -61,7 +61,7 @@
                 I received my Bachelor's in Electronics Engineering from the 
                 <a href="https://www.iitbhu.ac.in/">Indian Institute of Technology (BHU) Varanasi</a>.
 
-                My research focuses on control synthesis for agile, multi-mode robot control to achieve extreme performance, 
+                My research focuses on control synthesis for agile multi-mode robot control to achieve extreme performance, 
                 leveraging reinforcement learning and optimal control—guided by the principles of control theory.
 
               <p>
@@ -119,28 +119,20 @@
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-              <!-- <p>
-                <a href="media/me2.png"><img style="width:30%;max-width:30%" alt="profile photo" src="media/me2.png" class="hoverZoomLink"></a>
-                <a href="media/me2.png"><img style="width:30%;max-width:30%" alt="profile photo" src="media/me2.png" class="hoverZoomLink"></a>
-                <a href="media/me2.png"><img style="width:30%;max-width:30%" alt="profile photo" src="media/me2.png" class="hoverZoomLink"></a>
-              </p> -->
-            <!-- <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
+                <div class="image-layout">
 
-              <p>
-                My research focuses on extending the athletic intelligence in robots, thereby leveraging their motor skills to be on par with that found in the 
-                animal kingdom: the result of centuries of evolution. Though nature stands as an unparalleled motivation for us to mimic through machines, I realize 
-                its cruel mockery and envy its athletic supremacy every time I see the energy-exploding gallop of a cheetah or the agile flight maneuver of a soaring 
-                eagle or the sudden sprint by a raging ostrich. Decades of development in robot actuation, sensing, and computation have finally paved the way for such
-                 machines to be a reality. However, the algorithmic principles to attain such extreme performance in robots while solving diverse tasks continues to be 
-                 the final piece of the puzzle, calling to develop techniques that show strong empirical results backed by unassailable mathematical proofs and an 
-                 understanding through first principles. To this end, I am interested in adopting formal methods from reinforcement learning and optimization to 
-                 realize extreme performance in hybrid underactuated robotic systems with an optimal balance of performance, reliability, and guarantees.
-                </p>
-              </td> -->
+                  <img src="media/overview/parkour_crop.gif" alt="Image 1" style="border-radius: 15px;">
+                  <img class="span-rows" src="media/overview/dive_convert_crop.gif" alt="Same Image" style="border-radius: 15px;">
+                  <img src="media/overview/soccer_all_crop.gif" alt="Image 2" style="border-radius: 15px;">
+                  <img src="media/overview/bh_box_crop.gif" alt="Image 1" style="border-radius: 15px;">
+                  <img src="media/overview/digit_terrace_hw_full.gif" alt="Image 2" style="border-radius: 15px;">      
+              </div>
             </tr>
-          </tbody></table>
+        </tbody></table>
 
+    <!-- add a break here -->
+    <br>
+    <br>
     
     <!-- <img width="400"  src="media/overview/parkour.gif" alt="GIF" style="border-radius: 15px;"> -->
     <!-- <img width="275" src="media/overview/run.gif" alt="GIF" style="border-radius: 15px;"> -->
@@ -149,29 +141,16 @@
     <!-- <img width="300" height="130" src="media/overview/locomanip.gif" alt="GIF" style="border-radius: 15px;"> -->
     <!-- <img width="300" src="media/overview/digit_terrace_hw_full.gif" alt="GIF" style="border-radius: 15px;"> -->
 
-    <div class="image-layout">
 
-      <img src="media/overview/parkour_crop.gif" alt="Image 1" style="border-radius: 15px;">
-      <img class="span-rows" src="media/overview/dive_convert_crop.gif" alt="Same Image" style="border-radius: 15px;">
-      <img src="media/overview/soccer_all_crop.gif" alt="Image 2" style="border-radius: 15px;">
-      <img src="media/overview/bh_box_crop.gif" alt="Image 1" style="border-radius: 15px;">
-      <img src="media/overview/digit_terrace_hw_full.gif" alt="Image 2" style="border-radius: 15px;">
 
-      
-      <!-- Same image in the last column (spanning both rows) -->
-  </div>
-
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr>
         <td style="padding:20px;width:100%;vertical-align:middle">
             <heading>News</heading>
           </td>
         </tr>
-      </tbody></table>
 
-
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
         <ul>
           <li>Point 1</li>
@@ -181,8 +160,8 @@
           <li>Point 5</li>
 
         </ul>
-
-    </tbody></table>
+    </tbody></table> -->
+    
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr>
@@ -194,11 +173,11 @@
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-      <tr onmouseout="diffco_stop()" onmouseover="diffco_start()"  >
-        <td style="padding:20px;width:30%;vertical-align:middle">
+      <!-- <tr onmouseout="diffco_stop()" onmouseover="diffco_start()"  >
+        <td style="padding:20px;width:15%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='mmode'><img src="media/ogmp/v3_crop_spd.gif" width="200" height="145"></div>
-          <img src="media/ogmp/gap_block.png" width="200" height="145">
+          <div class="two" id='mmode'><img src="media/ogmp/v3_crop_spd.gif" width="200" height="130"></div>
+          <img src="media/ogmp/gap_block.png" width="200" height="130">
         </div>
         <script type="text/javascript">
           function diffco_start() {
@@ -221,27 +200,26 @@
         <a href="https://naira-hovakimyan.mechse.illinois.edu/">Naira Hovakimyan </a>,
         <a href="https://viterbi.usc.edu/directory/faculty/Nguyen/Quan">Quan Nguyen</a>
         <br>
-        <!-- <em>Accepted at <a href=https://ieee-iros.org> IROS 2023</a></em> -->
+
         <br>
-        <!-- <a href="https://arxiv.org/abs/2403.04205">arXiv</a> /
-        <a href="https://github.com/DRCL-USC/ogmp">GitHub</a> /
-        <a href="https://youtu.be/69SVc-43Oqg?si=FgHj8CUezaDdr9wc">video</a>  -->
+
         </td>
       </tr> 
+       -->
       
-      <tr onmouseout="ogmplm_stop()" onmouseover="ogmplm_start()"  >
-        <td style="padding:20px;width:30%;vertical-align:middle">
+       <tr onmouseout="ogmplm_stop()" onmouseover="ogmplm_start()"  >
+        <td style="padding:20px;width:15%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='mmode'><img src="media/ogmp/v3_crop_spd.gif" width="200" height="145"></div>
-          <img src="media/ogmp/gap_block.png" width="200" height="145">
+          <div class="two" id='ogmplm'><img src="media/ogmplm/dynamic.gif" width="200" height="130"></div>
+          <img src="media/ogmplm/static.gif" width="200" height="130">
         </div>
         <script type="text/javascript">
           function ogmplm_start() {
-            document.getElementById('ogmp').style.opacity = "1";
+            document.getElementById('ogmplm').style.opacity = "1";
           }
     
           function ogmplm_stop() {
-            document.getElementById('ogmp').style.opacity = "0";
+            document.getElementById('ogmplm').style.opacity = "0";
           }
           ogmplm_stop()
         </script>
@@ -264,20 +242,22 @@
       </tr> 
 
       <tr onmouseout="ogmp_stop()" onmouseover="ogmp_start()"  >
-        <td style="padding:20px;width:30%;vertical-align:middle">
+        <td style="padding:20px;width:15%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='mmode'><img src="media/ogmp/v3_crop_spd.gif" width="200" height="145"></div>
-          <img src="media/ogmp/gap_block.png" width="200" height="145">
+          <div class="two" id='ogmp'> <img src="media/ogmp/dynamic.gif" width="200" height="130"></div>
+          <img id="ogmp-gif" src="media/ogmp/static.gif" width="200" height="130">
         </div>
         <script type="text/javascript">
           function ogmp_start() {
+            var gif = document.getElementById('ogmp-gif');
+            gif.src = gif.src;  // Reset GIF by reassigning the source
             document.getElementById('ogmp').style.opacity = "1";
           }
     
           function ogmp_stop() {
             document.getElementById('ogmp').style.opacity = "0";
           }
-          ogmp_stop()
+          ogmp_stop();
         </script>
        </td>
         <td style="padding:20px;width:65%;vertical-align:middle">
@@ -297,8 +277,6 @@
 
     </tbody></table>
 
-
-
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr>
         <td style="padding:20px;width:100%;vertical-align:middle">
@@ -310,10 +288,10 @@
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
       <tr onmouseout="mmode_stop()" onmouseover="mmode_start()"  >
-        <td style="padding:20px;width:30%;vertical-align:middle">
+        <td style="padding:20px;width:15%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='mmode'><img src="media/mmode/v3_crop_spd.gif" width="200" height="145"></div>
-          <img src="media/mmode/gap_block.png" width="200" height="145">
+          <div class="two" id='mmode'><img src="media/mmode/v3_crop_spd.gif" width="200" height="130"></div>
+          <img src="media/mmode/gap_block.png" width="200" height="130">
         </div>
         <script type="text/javascript">
           function mmode_start() {
@@ -345,10 +323,10 @@
       </tr> 
 
       <tr onmouseout="lpbipedsuf_stop()" onmouseover="lpbipedsuf_start()"  >
-        <td style="padding:20px;width:30%;vertical-align:middle">
+        <td style="padding:20px;width:15%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='lpbipedsuf'><img src="media/lpbipedsuf/all_combined.gif" width="200" height="145"></div>
-          <img src="media/lpbipedsuf/stair_static.gif" width="200" height="145">
+          <div class="two" id='lpbipedsuf'><img src="media/lpbipedsuf/all_combined.gif" width="200" height="130"></div>
+          <img src="media/lpbipedsuf/stair_static.gif" width="200" height="130">
         </div>
         <script type="text/javascript">
           function lpbipedsuf_start() {
@@ -381,12 +359,12 @@
         <!-- <p>To make bipeds walk blindly on arbitary slopes, outdoors and stairs aswell as have a direct sim-to-real transfer, we find linear policies to be sufficient. </p> -->
         </td>
       </tr> 
-          
+  
       <tr onmouseout="lpbiped_stop()" onmouseover="lpbiped_start()"  >
-          <td style="padding:20px;width:30%;vertical-align:middle">
+          <td style="padding:20px;width:15%;vertical-align:middle">
           <div class="one">
-            <div class="two" id='lpbiped'><img src="media/lpbiped/lpb_final.gif" width="200" height="145"></div>
-            <img src="media/lpbiped/lpb_final_pic.gif" width="200" height="145">
+            <div class="two" id='lpbiped'><img src="media/lpbiped/lpb_final.gif" width="200" height="130"></div>
+            <img src="media/lpbiped/lpb_final_pic.gif" width="200" height="130">
           </div>
           <script type="text/javascript">
             function lpbiped_start() {
@@ -421,10 +399,10 @@
       </tr> 
 
       <tr onmouseout="lpquad_stop()" onmouseover="lpquad_start()"  >
-        <td style="padding:20px;width:30%;vertical-align:middle">
+        <td style="padding:20px;width:15%;vertical-align:middle">
           <div class="one">
-            <div class="two" id='corl'><img src="media/lpquad/lpquad.gif" width="200" height="145"></div>
-            <img src="media/lpquad/lpquadpic.gif" width="200" height="145">
+            <div class="two" id='corl'><img src="media/lpquad/lpquad.gif" width="200" height="130"></div>
+            <img src="media/lpquad/lpquadpic.gif" width="200" height="130">
           </div>
           <script type="text/javascript">
             function lpquad_start() {
@@ -470,98 +448,97 @@
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr>
       <td style="padding:20px;width:100%;vertical-align:middle">
-        <heading>Projects</heading>
+        <heading>Code Fossils</heading>
       </td>
     </tr>
   </tbody></table>
 
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>    
-      <td style="padding:20px;width:25%;vertical-align:middle" >
+      <td style="padding:10px;width:25%;vertical-align:middle" >
 
         <div class="one">
           <img src="media/hmmec/hmmec.gif" width="180" height="130">        
         </div>
+        <p style="text-align:center" >
+          <strong>A Framework for Learning Human Locomotor Adaptation
+            under Rigid Body assumptions </strong>
+          <br>
+          <a href="https://github.com/lok-i/hmm">GitHub</a> /
+          <a href="https://youtu.be/NUXfy9hKX9E?si=XPOxn-VZ8UTj-Lb7">Video</a> 
+        </p>
 
       </td>    
       <td style="padding:20px;width:25%;vertical-align:middle" >
         
         <div class="one">
           <img src="media/tdmsl/hills.gif" width="180" height="130">
-
-          
         </div>
-      </td>
-      <td style="padding:20px;width:25%;vertical-align:middle" >
-
-        <div class="one">
-          <img src="media/jerbot/Jerbotall3.gif" width="180" height="130">        
-        </div>
-
-      </td>
-      <td style="padding:20px;width:25%;vertical-align:middle" >
-        <div class="one">
-          <img src='media/ip_grid/ip.gif' width="180" height="130" >
-        </div>    
-      </td>
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <td style="padding:0px;width:25%;vertical-align:middle" >
-      <br>
-      <p style="text-align:center" >
-        <strong>A Framework for Learning Human Locomotor Adaptation
-          under Rigid Body assumptions </strong>
-        <br>
-        <a href="https://github.com/lok-i/hmm">GitHub</a> /
-        <a href="https://youtu.be/NUXfy9hKX9E?si=XPOxn-VZ8UTj-Lb7">Video</a> 
-      </p>
-  </td>
-
-    <td style="padding:0px;width:25%;vertical-align:middle" >
-        <br>
         <p style="text-align:center" >
           <strong>Learning Agile Bipedal Locomotion Through Trajectory Driven <br>Multi Stage Learning</strong>
           <br>
           <a href="https://github.com/lok-i/BoltEnv">GitHub</a> /
           <a href="https://youtu.be/KTHjCn-m34U">Video</a> 
         </p>
-    </td>
-    <td style="padding:0px;width:25%;vertical-align:middle">
-      <br>
-      <p style="text-align:center" >
-        <strong>Jerbot: a biomimetic bipedal robot</strong>
-        <br>
-        <a href="https://github.com/RaISy-Net/JerBot">GitHub</a> /
-        <a href="https://youtu.be/nnmxCUnQBLk">Video</a> 
+      </td>
+      <td style="padding:20px;width:25%;vertical-align:middle" >
+        <div class="one">
+          <img src="media/jerbot/Jerbotall3.gif" width="180" height="130">        
+        </div>
+        <p style="text-align:center" >
+          <strong>Jerbot: a biomimetic bipedal robot</strong>
+          <br>
+          <a href="https://github.com/RaISy-Net/JerBot">GitHub</a> /
+          <a href="https://youtu.be/nnmxCUnQBLk">Video</a> 
+  
+        </p>
+      </td>
+      <td style="padding:20px;width:25%;vertical-align:middle" >
+        <div class="one">
+          <img src='media/ip_grid/ip.gif' width="180" height="130" >
+        </div>   
+        <p style="text-align:center" >
+          <strong>Intelligent Picking for ware house automation</strong>
+          <em>National Finalists, Flipkart Grid 2.0 Robotics Challenge<a href="https://dare2compete.com/o/flipkart-grid-20-robotics-challenge-flipkart-grid-20-flipkart-113687?lb=BqsyloV"></a></em>
+          <br>
+          <a href="https://github.com/RaISy-Net/Intelligent_picking">GitHub</a> /
+          <a href="https://youtu.be/IlN6-pN3mRA">video</a> 
+        </p> 
+      </td>
 
-      </p>
-    </td>
-    <td style="padding:0px;width:25%;vertical-align:middle" >
-      <br>
-      <p style="text-align:center" >
-        <strong>Intelligent Picking: An end to end solution for ware house automation</strong>
-        <em>National Finalists, Flipkart Grid 2.0 Robotics Challenge<a href="https://dare2compete.com/o/flipkart-grid-20-robotics-challenge-flipkart-grid-20-flipkart-113687?lb=BqsyloV"></a></em>
-        <br>
-        <a href="https://github.com/RaISy-Net/Intelligent_picking">GitHub</a> /
-        <a href="https://youtu.be/IlN6-pN3mRA">video</a> 
-      </p>
-  </td>
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>    
       <td style="padding:20px;width:25%;vertical-align:middle" >
         <div class="one">
               <img src='media/miniprojects/ludobot.gif' width="180" height="130" >
           </div>
+          <p style="text-align:center" >
+            <strong>LudoBot: An autonmous ludo solving robot</strong>
+            <br>
+            <a href="https://github.com/lok-i/AUTONOMOUS_LUDO_SOLVING_ROBOT">GitHub</a> /
+            <a href="https://youtu.be/dD-m3eNNoEc">Video</a>
+          </p>
       </td>
       <td style="padding:20px;width:25%;vertical-align:middle" >
         <div class="one">
           <img src='media/miniprojects/gesturebot.gif' width="180" height="130" >
         </div>    
+        <p style="text-align:center" >
+          <strong>GestureBot: A mobile manpualtion platform for gesture controlled teleoperation</strong>
+          <br>
+          <a href="https://github.com/lok-i/Dynamic-Gesture-recognition-system">GitHub</a> /
+          <a href="https://youtu.be/Ia0tjqW7xKA">Video</a>
+        </p>
       </td>
 
       <td style="padding:20px;width:25%;vertical-align:middle" >
         <div class="one">
           <img src='media/aadopt/aadopt.gif' width="180" height="130" >
-        </div>    
+        </div>   
+        <p style="text-align:center" >
+          <strong>AADOpt: A Framework for Antenna Array Design and Synthesis through Optimisation</strong>
+          <br>
+          <a href="https://github.com/lok-i/AADOpt">GitHub</a>
+        </p> 
       </td>
 
       <td style="padding:20px;width:25%;vertical-align:middle" >
@@ -570,54 +547,17 @@
               <img src='media/miniprojects/arduinomlp.gif' width="180" height="130" ></div>
             <img src='media/miniprojects/arduinomlp_pic.gif' width="180" height="130">
           </div>
+          <p style="text-align:center" >
+            <strong>ArduinoMLP: A NN netowrk library for Arduino</strong>
+            <br>
+            <a href="https://github.com/lok-i/Arduino_MLP">GitHub</a>
+          </p>
         
         </div>
 
     
     </td>
             
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        <td style="padding:0px;width:25%;vertical-align:middle">
-        <br>
-        <p style="text-align:center" >
-          <strong>LudoBot: An autonmous ludo solving robot</strong>
-          <br>
-          <a href="https://github.com/lok-i/AUTONOMOUS_LUDO_SOLVING_ROBOT">GitHub</a> /
-          <a href="https://youtu.be/dD-m3eNNoEc">Video</a>
-        </p>
-        </td>
-        <td style="padding:0px;width:25%;vertical-align:middle">
-          <br>
-          <p style="text-align:center" >
-            <strong>GestureBot: A mobile manpualtion platform for gesture controlled teleoperation</strong>
-            <br>
-            <a href="https://github.com/lok-i/Dynamic-Gesture-recognition-system">GitHub</a> /
-            <a href="https://youtu.be/Ia0tjqW7xKA">Video</a>
-          </p>
-        </td>
-        <td style="padding:0px;width:25%;vertical-align:middle">
-          <br>
-          <p style="text-align:center" >
-            <strong>AADOpt: A Framework for Antenna Array Design and Synthesis through Optimisation</strong>
-            <br>
-            <a href="https://github.com/lok-i/AADOpt">GitHub</a>
-          </p>
-        </td>
-
-        <td style="padding:0px;width:25%;vertical-align:middle">
-          <br>
-          <p style="text-align:center" >
-            <strong>ArduinoMLP: A NN netowrk library for Arduino</strong>
-            <br>
-            <a href="https://github.com/lok-i/Arduino_MLP">GitHub</a>
-          </p>
-        </td>
-
-    
-  </tbody></table>
-
-
-
         <!-- Service -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
